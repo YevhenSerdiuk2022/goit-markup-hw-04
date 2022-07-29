@@ -67,7 +67,7 @@ img{
 .overlay{
     max-width: 1600px;
     height: 600px;
-   
+   background-color: #C4C4C4;;
     background-image: linear-gradient(
         to right,
          rgba(47, 48, 58, 0.4),
@@ -84,33 +84,33 @@ img{
 }
 .about-us__list{
     display: flex;
+    justify-content: center;
+    
+}
+
+.about-us__item{
+
+
+}
+.about-us__list-link{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 270px;
+height: 120px;
+background: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
+}
+.about-us__list-icon{
+    width: 70px;
+    height: 70px;
 }
 .about-us__item{
     max-width: 270px;
     
 }
-.about-us__item::before{
-    display: block;
-    content: "";
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--background-fon-button);
-    border-radius: 4px;
-    margin-bottom: 30px;
-}
-.icon-antenna::before{
-    background-image: url(../img/icon/antenna.svg);
-}
-.icon-clock::before{
-    background-image: url(../img/icon/clock.svg);
-}
-.icon-laptop::before{
-    background-image: url(../img/icon/diagram.svg);
-}
-.icon-astronaut::before{
-    background-image: url(../img/icon/astronaut.svg);
-}
+
 .about-us__item:not(:last-child){
     margin: 0px 30px 0px 0px;
 }
@@ -241,9 +241,7 @@ img{
 .menu-blue{
         color: var(--brand-color);
 }
-.menu__link:hover,.address__link:hover,.grey:hover{
-    color: var(--brand-color);
-}
+
 .menu{
     font-weight: 500;
     line-height: 1.2px;
@@ -261,8 +259,11 @@ img{
     color: var(--fonts-title-color);
     margin-right: 93px;
 }
- /* ==================================================== */
-/* ==================================================== */
+ /* ========================hover============================ */
+/* ========================================================= */
+.menu__link:hover,.address__link:hover,.grey:hover{
+    color: var(--brand-color);
+}
 
 .exmaple__list{
    display: flex;
